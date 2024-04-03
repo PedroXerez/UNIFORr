@@ -24,23 +24,23 @@ INICIO
     LEIA sal, prof
 
     // Condições que decidirão para onde os dados de entrada serão enviados.
-    ESCOLHA
+    ENVIE AS ENTRADAS PARA AS DETERMINADAS CONDIÇÕES
 
-        // Insira seu comentário
+        // Caso a profissão seja técnico, o salário é multiplicado em 1.5 (+50%) 
         CASO prof == “Técnico”		
             sal_reaj ← 1.5 * sal
 
-        // Insira seu comentário
+        // Caso a profissão seja gerente, o salário é multiplicado por 1.3 (+30%) 
         CASO prof = “Gerente”		
             sal_reaj ← 1.3 * sal
 
-    // Insira seu comentário
+    // Caso a profissão não seja nenhuma das duas anteriores, o salário é multiplicado por 1.1 (+10%) 
     SENÃO
         sal_reaj ← 1.1 * sal
 
-    FIM_ESCOLHA
+    FIM_CÓDIGO
 
-    // Insira seu comentário
+    // Texto para informar o usuário de que a operação foi um sucesso.
     ESCREVA “Salário Reajustado = “, sal_reaj
 
 FIM
