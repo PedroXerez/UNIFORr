@@ -1,6 +1,6 @@
 # UNIFOR
-**Nome**: Nome do estudante <br>
-**Disciplina**: Raciocínio lógico algorítm
+**Nome**: Pedro Henrique Xerez <br>
+**Disciplina**: Raciocínio lógico algorítmico
 
 ## Exercício exemplo
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular o adicional de salário de funcionário por cargo de uma empresa fictícia. Sabe-se que os funcionários de cargo técnico receberão reajuste de 50%, cargo de gerência, um reajuste de 30% e demais, um reajuste de 10%. 
@@ -28,27 +28,27 @@ DECLARE  sal, sal_reaj: real, prof: caractere
 
 INICIO
 
-    // Insira seu comentário
+    // Leitura das variaveis sal (Salário) e prof (Profissão) como entrada.
     LEIA sal, prof
 
-    // Insira seu comentário
+    // Condições que decidirão para onde os dados de entrada serão enviados.
     ESCOLHA
 
-        // Insira seu comentário
+        // Caso a profissão seja técnico, o salário é multiplicado em 1.5 (+50%) 
         CASO prof == “Técnico”		
             sal_reaj ← 1.5 * sal
 
-        // Insira seu comentário
+        // Caso a profissão seja gerente, o salário é multiplicado por 1.3 (+30%)
         CASO prof = “Gerente”		
             sal_reaj ← 1.3 * sal
 
-    // Insira seu comentário
+    // Caso a profissão não seja nenhuma das duas anteriores, o salário é multiplicado por 1.1 (+10%)
     SENÃO
         sal_reaj ← 1.1 * sal
 
-    FIM_ESCOLHA
+    FIM_ALGORITMO
 
-    // Insira seu comentário
+    // Texto para informar ao usuário seu novo salário ajustado.
     ESCREVA “Salário Reajustado = “, sal_reaj
 
 FIM
@@ -91,31 +91,31 @@ DECLARE num1, num2, num3, num4: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar o Dado 1 (1° Número)
     ESCREVA "Digite o número 1:"
 
-    // Insira seu comentário
+    // Leitura do dado 1 (1° Número) 
     LEIA num1
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar o Dado 2 (2° Número)
     ESCREVA "Digite o número 2:"
 
-    // Insira seu comentário
+    // Leitura do dado 2 (2° Número)
     LEIA num2
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar o Dado 3 (3° Numéro)
     ESCREVA "Digite o número 3:"
 
-    // Insira seu comentário
+    // Leitura do dado 3 (3° Número)
     LEIA num3
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar o Dado 4 (4° Número)
     ESCREVA "Digite o número 4:"
 
-    // Insira seu comentário
+    // Leitura do Dado 4 (4° Número)
     LEIA num4
 
-    // Insira seu comentário
+    // Calcular a média aritmética dos dados 1, 2, 3 e 4. Informar ao usuário qual é a média.
     media <- (num1 + num2 + num3 + num4)/4
     ESCREVA "A média é", media
 
