@@ -1,15 +1,15 @@
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** preencha com seus dados <br>
-**Disciplina:** preencha com seus dados <br>
-**Código/Turma:** preencha com seus dados <br>
+**Curso:** Ciências da Computação <br>
+**Disciplina:** Raciocínio Lógico Algoritmico <br>
+**Código/Turma:** Turma 40 <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
-**Aluno(a):** preencha com seus dados <br>
-**Matrícula:** preencha com seus dados <br>
+**Data:** 03/04/2024 <br>
+**Aluno(a):** Pedro Henrique Xerez Castelo Branco Ramos <br>
+**Matrícula:** 2020401 <br>
 
-**1a chamada (Sim/Não):** preencha com a opção correta <br>
-**2a chamada (Sim/Não):** preencha com a opção correta
+**1a chamada (Sim/Não):** Não <br>
+**2a chamada (Sim/Não):** Sim
 
 # Avaliação Diagnóstica 1
 
@@ -79,28 +79,28 @@ DECLARE a,b,axu: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação de entrada A para o usuário
     ESCREVA "Digite o valor da a:"
 
-    // Insira seu comentário
+    // Leitura do dado A informado.
     LEIA a
 
-    // Insira seu comentário
+    // Solicitação de entrada B para o usuário
     ESCREVA "Digite o valor da b:"
 
-    // Insira seu comentário
+    // Leitura do dado B informado.
     LEIA b
 
-    // Insira seu comentário
+    // Atribuição da variável A ao valor original da variável aux
     aux <- a 
 
-    // Insira seu comentário
+    // Atribuição da variável B ao valor original da variável A
     a <- b
 
-    // Insira seu comentário
+    // Atribuição da variável aux ao valor original da variável B
     b <- aux
 
-    // Insira seu comentário
+    // Informar os valores finais das duas entradas.
     ESCREVA "a=", a
     ESCREVA "b=", b
 
@@ -175,28 +175,28 @@ DECLARE n, cont, nota, i: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação para dado de entrada, informando quantidade de notas dos alunos.
     ESCREVA "Digite a quantidade de notas dos alunos:"
 
-    // Insira seu comentário
+    // Leitura do dado 1 informado
     LEIA n
 
-    // Insira seu comentário
+    // Inicializar Contagem do número 0
     cont = 0 
 
-    // Insira seu comentário
+    // De I até o número Dado 1, faça
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Solicitação da nota do aluno.
         ESCREVA "Digite a nota do aluno", i, ":"
 
-        // Insira seu comentário
+        // Leitura do dado 2 informado
         LEIA nota
 
-        // Insira seu comentário
+        // Se a nota for maior ou igual a 50 e menos ou igual a 100, então
         SE nota >= 50 E nota <= 100 ENTAO
 
-            // Insira seu comentário
+            // Contagem, vai até 1
             cont = cont + 1 
 
         FIM_SE
