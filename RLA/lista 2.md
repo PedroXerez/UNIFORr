@@ -150,16 +150,16 @@ DECLARE C, F: REAL
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite a temperatura em Celisus:"
+    // Solicitação para que o usuário digita o dado 1
+    ESCREVA "Digite a temperatura em Celsus:"
 
-    // Insira seu comentário
+    // Leitura do Dado 1
     LEIA C
 
-    // Insira seu comentário
+    // Aplicação da fórmula para alterar a temperatura de celcius para fahrenheit
     F <- (9/5) * C + 32
 
-    // Insira seu comentário
+    // Apresentar ao usuário o valor de dado 1 informado em celsius como fahrenheit
     ESCREVA "A temperatura em Fahrenheit é", F, "graus"
 
 FIM
@@ -217,76 +217,76 @@ DECLARE op: INTEIRO; num1,num2,res: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação para o usuário escrever as 4 operações da matemática
     ESCREVA "Operações válidas: 1(soma), 2(subtração), 3(multiplicação) e 4(divisão)"
 
-    // Insira seu comentário
+    // Solicitação para o usuário escrever uma das operações
     ESCREVA "Digite uma operação:"
 
-    // Insira seu comentário
+    // Leitura de dado da operação escolhida
     LEIA op
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar um número, logo em seguida sua leitura é feita no algoritmo.
     ESCREVA "Digite um número:"
     LEIA num1
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar outro número, logo em seguida sua leitura é feita no algoritmo.
     ESCREVA "Digite outro número:"
     LEIA num2
 
-    // Insira seu comentário
+    // Condições a seguir para a escolha da operação
     ESCOLHA
 
-        // Insira seu comentário
+        // Condição 1 para caso a operação escolhida tenha sido soma
         CASO op == 1
 
-            // Insira seu comentário
+            // Somar 1° número com 2° número
             res = num1 + num2
 
-            // Insira seu comentário
+            // Escrever expressão númerica, com base na operação escolhida (soma), e seu resultado.
             ESCREVA num1, "+", num2, "=", res
 
-        // Insira seu comentário
+        // Condição para caso a operação escolhida tenha sido subtração
         CASO op == 2
 
-            // Insira seu comentário
+            // Subtrair 1° número com 2° número
             res = num1 - num2
 
-            // Insira seu comentário
+            // Escrever expressão númerica, com base na operação escolhida (subtração), e seu resultado.
             ESCREVA num1, "-", num2, "=", res
 
-        // Insira seu comentário
+        // Condição para caso a operação escolhida tenha sido multiplicação
         CASO op == 3
 
-            // Insira seu comentário
+            // Multiplicar 1° número com 2° número
             res = num1 * num2
 
-            // Insira seu comentário
+            // Escrever expressão númerica, com base na operação escolhida (Multiplicação), e seu resultado.
             ESCREVA num1, "*", num2, "=", res
 
-        // Insira seu comentário
+        // Condição para caso a operação escolhida tenha sido divisão
         CASO op == 4
 
-            // Insira seu comentário
+            // Condição 2, se o segundo número for diferente de 0, continue o algoritmo
             SE num2 != 0 ENTAO
 
-                // Insira seu comentário
+                // Dividir 1° número com 2° número
                 res = num1 / num2
 
-                // Insira seu comentário
+                // Escrever expressão númerica, com base na operação escolhida (Divisão), e seu resultado.
                 ESCREVA num1, "/", num2, "=", res
 
-            // Insira seu comentário
+            // Se a condição 2 não for atendida, escreva que é impossível dividir.
             SENAO
                 ESCREVA "Impossível dividir!"
 
-            FIM_SE
+            FIM_ALGORITMO
 
-    // Insira seu comentário
+    // Se nenhuma das condições validas forem escolhidas, informar que a operação é inválida.
     SENAO
         ESCREVA "Operação inválida!"
 
-    FIM_ESCOLHA
+    FIM_ALGORITMO
 
 FIM
 ```
@@ -338,49 +338,49 @@ DECLARE idade: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação para entrada de dado idade do aluno
     ESCREVA "Digite a idade do aluno:"
 
-    // Insira seu comentário
+    // Leitura do dado informado
     LEIA idade
 
-    // Insira seu comentário
+    // Condições a seguir para a classificação das idades
     ESCOLHA
 
-        // Insira seu comentário
+        // Se a idade for entre 5 e 7.
         CASO idade >=5 E idade <= 7
 
-            // Insira seu comentário
+            // Informar ao usuário que a idade do dado informado pertence ao infantil A
             ESCREVA "Infantial A"
 
-        // Insira seu comentário
+        // Se a idade for entre 8 e 10
         CASO idade >=8 E idade <= 10
 
-            // Insira seu comentário
+            // Informar ao usuário que a idade do dado informado pertence ao infantil B
             ESCREVA "Infantial B"
 
-        // Insira seu comentário
+        // Se a idade for entre 11 e 13
         CASO idade >=11 E idade <= 13
 
-            // Insira seu comentário
+            // Informar ao usuário que a idade do dado informado pertence ao Juvenil A
             ESCREVA "Juvenil A"
 
-        // Insira seu comentário
+        // Se a idade for entre 11 e 13
         CASO idade >=14 E idade <= 17
 
-            // Insira seu comentário
+            // Informar ao usuário que a idade do dado informado pertence ao Juvenil B
             ESCREVA "Juvenil B"
 
-        // Insira seu comentário
+        // Se a idade for maior ou igual a 18
         CASO idade >=18
 
-            // Insira seu comentário
+            // Informar ao usuário que a idade do dado informado pertence à classificação "adulto".
             ESCREVA "Adulto"
 
-    // Insira seu comentário
+    // Caso nenhuma das condições sejam atendidas
     SENAO
 
-        // Insira seu comentário
+        // Informe ao usuário para que ele digite uma idade válida.
         ESCREVA "Digite uma idade válida!"
 
     FIM_ESCOLHA
