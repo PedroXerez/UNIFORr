@@ -1,5 +1,5 @@
 # UNIFOR
-**Nome**: Nome do estudante <br>
+**Nome**: Pedro Henrique Xerez C B Ramos <br>
 **Disciplina**: Raciocínio lógico algorítmico
 
 ## Lista de exercícios 01
@@ -31,33 +31,33 @@ DECLARE numero, resto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Dado de entrada.
     ESCREVA "Digite um número: "
     
-    // Insira seu comentário
+    // Leitura do dado.
     LEIA numero
     
-    // Insira seu comentário
+    // Condição 1, se o número for positivo, continue o código..
     SE numero >= 0 ENTAO
 
-        // Insira seu comentário
+        // Cálculo para saber o resto dentro da Condição 1.
         resto <- numero % 2
 
-        // Insira seu comentário
+        // Se o cálculo de resto for igual a 0, número par.
         SE resto == 0 ENTAO
             ESCREVA "O número é par!"
 
-        // Insira seu comentário
+        // Se o cálculo de resto não for igual a 0, número impar.
         SENAO
           ESCREVA "O número é impar!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // Se a condição 1 não for atendida, informar que o número deve ser positivo.
     SENAO             
         ESCREVA "O número deve ser postivo!"
 
-    FIM_SE
+    FIM_ALGORITMO
 
 FIM
 ```
@@ -96,23 +96,23 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitar que o usuário digite o dado salário atual.
     ESCREVA "Digite seu salário atual:"
 
-    // Insira seu comentário
+    // Leitura do dado feita pelo algoritmo.
     LEIA sal_atual
 
-    // Insira seu comentário
+    // Condição 1: salário ser menor ou igual à 500. Se for atendida, multiplicar o dado por 1.2 (aumento de 20%).
     SE sal_atual <= 500 ENTAO
         sal_reaj = sal_atual * 1.2
 
-    // Insira seu comentário
+    // Se a condição 1 não for atendida, multiplicar dado salário atual por 1.1 (aumento de 10%).
     SENAO
         sal_reaj = sal_atual * 1.1
 
-    FIM_SE
+    FIM_ALGORITMO
 
-    // Insira seu comentário
+    // Enviar mensagem para o usuário informando seu novo salário conforme foi modificado no código.
     ESCREVA "O novo salário é R$", sal_reaj
 
 FIM
@@ -156,39 +156,39 @@ DECLARE nota1, nota2, media: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar a nota 1
     ESCREVA "Digite a nota 1:"
 
-    // Insira seu comentário
+    // Leitura do dado 1 (nota 1)
     LEIA nota1
 
-    // Insira seu comentário
+    // Solicitação para o usuário digitar a nota 2
     ESCREVA "Digite a nota 2:"
 
-    // Insira seu comentário
+    // Leitura do dado 2 (nota 2)
     LEIA nota2
 
-    // Insira seu comentário
+    // Condição 1, Se nota 1 e nota 2 forem maiores ou iguais a 0, continuar algoritmo
     SE nota1 >= 0 E nota2 >= 0 ENTAO
 
-        // Insira seu comentário
+        // Calcular média aritmética de nota 1 e nota 2
         media =  (nota1 + nota2)/2
 
-        // Insira seu comentário
+        // Condição 1.1. Se a média for maior ou igual à 7, informar ao usuário uma mensagem que o aluno está aprovado.
         SE media >= 7 ENTAO
             ESCREVA "O aluno está aprovado!"
 
-        // Insira seu comentário
+        // Se condição 1.1 não for atendida, informar que o aluno está reprovado.
         SENAO
             "O aluno está reprovado!"
 
-        FIM_SE
+        FIM_ALGORITMO
 
-    // Insira seu comentário
+    // Se condição 1 não for atendida, informar que a nota deve ser maior que zero.
     SENAO
         ESCREVA "A nota deve ser maior que zero!"
 
-    FIM_SE
+    FIM_ALGORITMO
 
 FIM
 ```
@@ -231,35 +231,35 @@ DECLARE idade, anos_apto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicitação para que o usuário digite o dado 1 (Sua idade)
     ESCREVA ""Digite a sua idade:"
 
-    // Insira seu comentário
+    // Leitura do dado 1
     LEIA idade
 
-    // Insira seu comentário
+    // Condição 1, caso o dado 1 seja menor que zero, informar que a idade deve ser maior que zero.
     SE idade < 0 ENTAO
         ESCREVA "A idade deve ser maior que zero!"
 
-    // Insira seu comentário
+    // Caso a condição um não seja atendida, continuar algoritmo.
     SENAO
 
-        // Insira seu comentário
+        // Condição 2. Se a idade do candidato for maior ou igual a 18, informar que está apto para tirar a CNH.
         SE idade >= 18 ENTAO
             ESCREVA "O candidato está apto a tirar a CNH!"
 
-        // Insira seu comentário
+        // Caso a condição 2 não seja atendida, continuar o algoritmo.
         SENAO
 
-            // Insira seu comentário
+            // Calcular 18 - Dado 1.
             anos_apto <- 18 - idade
 
-            // Insira seu comentário
+            // Informar que faltam x (Resultado entre 18 - Dado 1) ano (s) para o candidato estar apto.
             ESCREVA "Faltam", anos_apto, "ano(s) para o candidato estar apto!"
 
-        FIM_SE
+        FIM_ALGORITMO
 
-    FIM_SE
+    FIM_ALGORITMO
 
 FIM
 ```
